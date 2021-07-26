@@ -1,0 +1,14 @@
+.Left-sidebar {
+  @extend %margin-bottom-lg;
+}
+.panel:last-of-type {
+  margin-bottom: 0;
+}
+.vertical-slider {
+  overflow: hidden;
+
+  border-radius: 4px;
+  img {
+    width: 100%;
+  }
+}
