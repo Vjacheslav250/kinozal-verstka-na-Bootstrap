@@ -62,28 +62,33 @@
   margin-right: 0;
 }
 
-.panel-info {
-  margin-bottom: $gap * 2;
+.panel {
+  &-info {
+    margin-bottom: $gap * 2;
 
-  border: none;
-  background-color: darken($color-light, 7%);
+    border: none;
+    background-color: darken($color-light, 7%);
+
+    > .panel-heading {
+      letter-spacing: 0.08em;
+
+      color: $color-light;
+      border: none;
+      background-color: $color-accent;
+
+      font-size: 1.25rem;
+    }
+  }
 }
 
-.panel-body {
-  padding: 15px;
-}
-
-.panel-info > .panel-heading {
-  letter-spacing: 0.08em;
-
-  color: $color-light;
-  border: none;
-  background-color: $color-accent;
-
-  font-size: 1.25rem;
-}
-
-.panel-body {
+.panel-info .panel-body {
   border: 1px solid $color-gray;
   border-radius: 0 0 4px 4px;
+}
+
+.input {
+  &-lg,
+  &.input-group-lg > .form-control {
+    font-size: 0.875rem;
+  }
 }
