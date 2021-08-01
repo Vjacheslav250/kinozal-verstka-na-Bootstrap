@@ -13,25 +13,27 @@
 .new-films,
 .top-week {
   &-row {
-    margin-left: -$gap / 2;
     margin-right: -$gap / 2;
     margin-bottom: -$gap;
+    margin-left: -$gap / 2;
   }
 
   &-item {
-    padding-left: $gap / 2;
-    padding-right: $gap / 2;
     margin-bottom: $gap;
+    padding-right: $gap / 2;
+    padding-left: $gap / 2;
 
     &__thumbnail {
       margin-bottom: 0;
     }
 
     &__title {
-      @include text-shortener;
+      margin: 0;
+
       font-size: 1rem;
       font-weight: bold;
-      margin: 0;
+
+      @include text-shortener;
     }
 
     &__caption,
@@ -45,11 +47,11 @@
 
     &:hover {
       .thumbnail {
-        border-color: #df8a13;
-        background-color: #df8a13;
+        border-color: $color-accent;
+        background-color: $color-accent;
       }
       h3 {
-        color: #ffffff;
+        color: $color-light;
       }
     }
   }
@@ -57,44 +59,40 @@
 
 .thumbnail {
   -webkit-transition: background-color 0.25s;
-  -o-transition: background-color 0.25s;
-  transition: background-color 0.25s;
+       -o-transition: background-color 0.25s;
+          transition: background-color 0.25s;
 }
 
-// .film-news-item .thumbnail {
-//   margin-bottom: 0;
+///
 
-//   -webkit-transition: background-color 0.25s;
-//   -o-transition: background-color 0.25s;
-//   transition: background-color 0.25s;
-// }
-// .film-news-item__image {
-//   width: 100%;
-// }
-// .film-news-item__text {
-//   text-align: justify;
-// }
-// .film-news-item__button {
-//   float: right;
+.film-news-item {
+  margin-bottom: 0;
 
-//   margin-bottom: 30px;
+  &__image {
+    width: 100%;
+  }
 
-//   -webkit-transition: background-color 0.25s;
-//   -o-transition: background-color 0.25s;
-//   transition: background-color 0.25s;
-// }
-// .film-news-item:hover .thumbnail {
-//   border-color: #df8a13;
-//   background-color: #df8a13;
-// }
-// .film-news-item:hover h3 > a {
-//   color: #df8a13;
-// }
-// .film-news-item:hover .btn-warning {
-//   background-color: #df8a13;
-// }
-// .film-news-item h3 > a {
-//   -webkit-transition: color 0.25s;
-//   -o-transition: color 0.25s;
-//   transition: color 0.25s;
-// }
+  &__text {
+    text-align: justify;
+  }
+
+  &__button {
+    float: right;
+
+    margin-bottom: $gap * 2;
+  }
+
+  &:hover {
+    .thumbnail {
+      border-color: $color-accent;
+      background-color: $color-accent;
+    }
+    & h3 > a {
+      color: $color-accent;
+    }
+
+    .btn-warning {
+      background-color: $color-accent;
+    }
+  }
+}
