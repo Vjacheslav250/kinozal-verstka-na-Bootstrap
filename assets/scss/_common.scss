@@ -2,6 +2,10 @@ html {
   font-size: $font-size;
 }
 
+// ::-webkit-scrollbar {
+//   display: none;
+// }
+
 .modal-scrollbar-measure {
   position: absolute;
   top: -9999px;

@@ -59,13 +59,14 @@
 
 .thumbnail {
   -webkit-transition: background-color 0.25s;
-       -o-transition: background-color 0.25s;
-          transition: background-color 0.25s;
+  -o-transition: background-color 0.25s;
+  transition: background-color 0.25s;
 }
 
 ///
 
-.film-news-item {
+.film-news-item,
+.thumbnail {
   margin-bottom: 0;
 
   &__image {

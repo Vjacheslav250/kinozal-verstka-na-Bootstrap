@@ -1,0 +1,28 @@
+.footer {
+  padding-top: 45px;
+
+  color: #d5d5d5;
+  background-color: #232323;
+
+  & ul {
+    padding: 0;
+
+    list-style: none;
+  }
+
+  & a {
+    color: #6f6f6f;
+    &:hover {
+      color: #ffffff;
+    }
+  }
+
+  .footer-fifth {
+    margin: 20px 0;
+    text-align: center;
+
+    & a {
+      color: #d5d5d5;
+    }
+  }
+}

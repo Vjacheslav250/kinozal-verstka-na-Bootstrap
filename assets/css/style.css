@@ -68,9 +68,9 @@ html {
 .modal-scrollbar-measure {
   position: absolute;
   top: -9999px;
+  overflow: scroll;
   width: 50px;
   height: 50px;
-  overflow: scroll;
 }
 
 body {
@@ -101,8 +101,8 @@ h1::after {
 }
 
 h2 {
-  font-family: "PT Serif", serif;
   margin: 60px 0 45px 45px;
+  font-family: "PT Serif", serif;
   font-size: 2.5rem;
 }
 
@@ -152,15 +152,15 @@ h2::after {
 
 .new-films-row,
 .top-week-row {
-  margin-left: -7.5px;
   margin-right: -7.5px;
   margin-bottom: -15px;
+  margin-left: -7.5px;
 }
 .new-films-item,
 .top-week-item {
-  padding-left: 7.5px;
-  padding-right: 7.5px;
   margin-bottom: 15px;
+  padding-right: 7.5px;
+  padding-left: 7.5px;
 }
 .new-films-item__thumbnail,
 .top-week-item__thumbnail {
@@ -168,14 +168,14 @@ h2::after {
 }
 .new-films-item__title,
 .top-week-item__title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: bold;
   display: block;
   overflow: hidden;
   white-space: nowrap;
   -o-text-overflow: ellipsis;
      text-overflow: ellipsis;
-  font-size: 1rem;
-  font-weight: bold;
-  margin: 0;
 }
 .new-films-item__caption,
 .new-films-item .top-week-item__caption,
@@ -203,27 +203,34 @@ h2::after {
   transition: background-color 0.25s;
 }
 
-.film-news-item {
+.film-news-item,
+.thumbnail {
   margin-bottom: 0;
 }
-.film-news-item__image {
+.film-news-item__image,
+.thumbnail__image {
   width: 100%;
 }
-.film-news-item__text {
+.film-news-item__text,
+.thumbnail__text {
   text-align: justify;
 }
-.film-news-item__button {
+.film-news-item__button,
+.thumbnail__button {
   float: right;
   margin-bottom: 30px;
 }
-.film-news-item:hover .thumbnail {
+.film-news-item:hover .thumbnail,
+.thumbnail:hover .thumbnail {
   border-color: #df8a13;
   background-color: #df8a13;
 }
-.film-news-item:hover h3 > a {
+.film-news-item:hover h3 > a,
+.thumbnail:hover h3 > a {
   color: #df8a13;
 }
-.film-news-item:hover .btn-warning {
+.film-news-item:hover .btn-warning,
+.thumbnail:hover .btn-warning {
   background-color: #df8a13;
 }
 
@@ -338,6 +345,29 @@ h2::after {
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+
+.footer {
+  padding-top: 45px;
+  color: #d5d5d5;
+  background-color: #232323;
+}
+.footer ul {
+  padding: 0;
+  list-style: none;
+}
+.footer a {
+  color: #6f6f6f;
+}
+.footer a:hover {
+  color: #ffffff;
+}
+.footer .footer-fifth {
+  margin: 20px 0;
+  text-align: center;
+}
+.footer .footer-fifth a {
+  color: #d5d5d5;
 }
 @media (min-width: 576px) {
   .header-logo__title {
