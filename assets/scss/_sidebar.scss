@@ -73,7 +73,7 @@ $image-size-width-padding: $image-size + 10;
   }
 
   &__title {
-    margin-bottom: ($gap / 3 * 2);
+    margin-bottom: ($gap / 3 + 3);
     a {
       @include block-shortener(1rem, 1.5, 50px, 2);
     }

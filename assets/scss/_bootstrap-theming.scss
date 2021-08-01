@@ -67,7 +67,7 @@
     margin-bottom: $gap * 2;
 
     border: none;
-    background-color: darken($color-light, 7%);
+    background-color: darken($color-light, 4.2%);
 
     > .panel-heading {
       letter-spacing: 0.08em;
@@ -88,7 +88,12 @@
 
 .input {
   &-lg,
-  &.input-group-lg > .form-control {
+  &-group-lg > .form-control {
     font-size: 0.875rem;
   }
+}
+
+section {
+  position: relative;
+  overflow: hidden;
 }

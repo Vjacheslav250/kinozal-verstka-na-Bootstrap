@@ -37,7 +37,7 @@
 .panel-info {
   margin-bottom: 30px;
   border: none;
-  background-color: #ededed;
+  background-color: #f4f4f4;
 }
 .panel-info > .panel-heading {
   letter-spacing: 0.08em;
@@ -52,13 +52,25 @@
   border-radius: 0 0 4px 4px;
 }
 
-.input-lg, .input.input-group-lg > .form-control {
+.input-lg, .input-group-lg > .form-control {
   font-size: 0.875rem;
 }
 
+section {
+  position: relative;
+  overflow: hidden;
+}
+
 html {
-  overflow-y: scroll;
   font-size: 16px;
+}
+
+.modal-scrollbar-measure {
+  position: absolute;
+  top: -9999px;
+  width: 50px;
+  height: 50px;
+  overflow: scroll;
 }
 
 body {
@@ -80,6 +92,37 @@ h1 {
   font-size: 3rem;
 }
 
+h1::after {
+  position: absolute;
+  width: 100%;
+  margin: 0.85em 0 0 15px;
+  content: "";
+  border-bottom: 3px solid #f0ad4f;
+}
+
+h2 {
+  font-family: "PT Serif", serif;
+  margin: 60px 0 45px 45px;
+  font-size: 2.5rem;
+}
+
+h2::before {
+  position: absolute;
+  left: 0;
+  width: 30px;
+  margin: 0.25em 0 0 0;
+  content: "";
+  border-bottom: 3px solid #f0ad4f;
+}
+
+h2::after {
+  position: absolute;
+  width: 100%;
+  margin: 0.85em 0 0 15px;
+  content: "";
+  border-bottom: 3px solid #f0ad4f;
+}
+
 .header-logo {
   padding: 100px 0;
   text-align: center;
@@ -98,6 +141,66 @@ h1 {
   letter-spacing: 0.2em;
   color: #ffffff;
   font-size: 1.15rem;
+}
+
+.main .site-serch {
+  margin-bottom: 45px;
+}
+.main .user-login {
+  margin-bottom: 60px;
+}
+
+.new-films-row,
+.top-week-row {
+  margin-left: -7.5px;
+  margin-right: -7.5px;
+  margin-bottom: -15px;
+}
+.new-films-item,
+.top-week-item {
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+  margin-bottom: 15px;
+}
+.new-films-item__thumbnail,
+.top-week-item__thumbnail {
+  margin-bottom: 0;
+}
+.new-films-item__title,
+.top-week-item__title {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
+}
+.new-films-item__caption,
+.new-films-item .top-week-item__caption,
+.top-week-item__caption,
+.top-week-item .top-week-item__caption {
+  text-align: center;
+}
+.new-films-item__image,
+.top-week-item__image {
+  width: 100%;
+}
+.new-films-item:hover .thumbnail,
+.top-week-item:hover .thumbnail {
+  border-color: #df8a13;
+  background-color: #df8a13;
+}
+.new-films-item:hover h3,
+.top-week-item:hover h3 {
+  color: #ffffff;
+}
+
+.thumbnail {
+  -webkit-transition: background-color 0.25s;
+  -o-transition: background-color 0.25s;
+  transition: background-color 0.25s;
 }
 
 .Left-sidebar .panel:last-of-type {
@@ -122,18 +225,18 @@ h1 {
   border: none;
 }
 .user-login__tabs a {
-  background-color: transparent !important;
-  border: none !important;
-  color: #dddddd;
   padding: 14px 5px 11px !important;
+  color: #dddddd;
+  border: none !important;
+  background-color: transparent !important;
 }
 .user-login__tabs .active a {
   color: #ffffff !important;
 }
 
 .site-news-item {
-  clear: both;
   position: relative;
+  clear: both;
 }
 .site-news-item:not(:last-of-type) {
   min-height: 85px;
@@ -157,7 +260,7 @@ h1 {
   width: 100%;
 }
 .site-news-item__title {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 .site-news-item__title a {
   display: -webkit-box;
@@ -169,24 +272,24 @@ h1 {
   -webkit-line-clamp: 2;
 }
 .site-news-item__date {
-  font-size: 0.8rem;
-  color: #6f6f6f;
   text-align: right;
+  color: #6f6f6f;
+  font-size: 0.8rem;
 }
 
 .top-films__body {
-  padding-left: 0;
   padding-right: 0;
+  padding-left: 0;
 }
 .top-films__list {
   margin-bottom: 0;
 }
 .top-films__item {
-  margin-left: -1;
   margin-right: -1;
+  margin-left: -1;
   padding-right: 55px;
-  background-color: transparent;
   color: #165690 !important;
+  background-color: transparent;
 }
 .top-films__item:first-child {
   border-top: none;
@@ -197,9 +300,9 @@ h1 {
   border-radius: 0;
 }
 .top-films__item:hover, .top-films__item:focus {
-  background-color: #df8a13 !important;
   color: #ffffff !important;
   border-color: #df8a13;
+  background-color: #df8a13 !important;
 }
 .top-films__item:hover .badge, .top-films__item:focus .badge {
   background-color: #232323;
