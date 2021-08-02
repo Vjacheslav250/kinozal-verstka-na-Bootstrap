@@ -59,8 +59,8 @@
 
 .thumbnail {
   -webkit-transition: background-color 0.25s;
-  -o-transition: background-color 0.25s;
-  transition: background-color 0.25s;
+       -o-transition: background-color 0.25s;
+          transition: background-color 0.25s;
 }
 
 ///
@@ -96,4 +96,9 @@
       background-color: $color-accent;
     }
   }
+}
+.film-news-item h3 > a {
+  -webkit-transition: color 0.25s;
+       -o-transition: color 0.25s;
+          transition: color 0.25s;
 }

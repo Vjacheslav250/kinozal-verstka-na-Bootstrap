@@ -99,8 +99,8 @@ $image-size-width-padding: $image-size + 10;
   }
 
   &__item {
-    margin-right: -1;
-    margin-left: -1;
+    margin-right: -1px;
+    margin-left: -1px;
     padding-right: 55px;
 
     color: $color-primary !important;

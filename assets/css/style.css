@@ -47,7 +47,7 @@
   font-size: 1.25rem;
 }
 
-.panel-info .panel-body {
+.panel-body {
   border: 1px solid #dddddd;
   border-radius: 0 0 4px 4px;
 }
@@ -234,6 +234,12 @@ h2::after {
   background-color: #df8a13;
 }
 
+.film-news-item h3 > a {
+  -webkit-transition: color 0.25s;
+  -o-transition: color 0.25s;
+  transition: color 0.25s;
+}
+
 .Left-sidebar .panel:last-of-type {
   margin-bottom: 0;
 }
@@ -316,8 +322,8 @@ h2::after {
   margin-bottom: 0;
 }
 .top-films__item {
-  margin-right: -1;
-  margin-left: -1;
+  margin-right: -1px;
+  margin-left: -1px;
   padding-right: 55px;
   color: #165690 !important;
   background-color: transparent;
@@ -370,6 +376,9 @@ h2::after {
   color: #d5d5d5;
 }
 @media (min-width: 576px) {
+  h3 {
+    font-size: 1.5rem;
+  }
   .header-logo__title {
     margin-right: -0.33em;
     letter-spacing: 0.33em;
@@ -399,6 +408,17 @@ h2::after {
   }
 }
 @media (max-width: 575.8px) {
+  h3 {
+    font-size: 1.25rem;
+  }
+  h1 {
+    margin: 0 0 1em;
+    font-size: 2rem;
+  }
+  h2 {
+    margin: 45px 0 30px 45px;
+    font-size: 1.75rem;
+  }
   .header-logo__title {
     margin-right: -0.33em;
     letter-spacing: 0.33em;

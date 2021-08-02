@@ -58,7 +58,6 @@
   }
 }
 
-
 @mixin sm-xs {
   @media (max-width: $sm - 0.2) and (min-width: $xs) {
     @content;
