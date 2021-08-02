@@ -36,6 +36,12 @@ h1 {
 
   font-family: $font-header;
   font-size: 3rem;
+
+  @include xs {
+    margin: 0 0 1em;
+
+    font-size: 2rem;
+  }
 }
 
 h1::after {
@@ -54,6 +60,12 @@ h2 {
 
   font-family: $font-header;
   font-size: 2.5rem;
+
+  @include xs {
+    margin: 45px 0 30px 45px;
+
+    font-size: 1.75rem;
+  }
 }
 
 h2::before {
@@ -85,38 +97,3 @@ h3 {
     font-size: 1.25rem;
   }
 }
-
-h1 {
-  @include xs {
-    margin: 0 0 1em;
-
-    font-size: 2rem;
-  }
-}
-
-h2 {
-  @include xs {
-    margin: 45px 0 30px 45px;
-
-    font-size: 1.75rem;
-  }
-}
-
-// @media xs-min {
-//   h1 {
-//     margin: -9.99999999px 0 1em 0;
-
-//     font-size: 3rem;
-//   }
-//   h2 {
-//     margin: 60px 0 45px 45px;
-
-//     font-size: 2.5rem;
-//   }
-//   h3 {
-//     font-size: 1.5rem;
-//   }
-//   .header-logo__title {
-//     font-size: 3.5rem;
-//   }
-// }
