@@ -1,19 +1,24 @@
 .film-info {
   font-size: 1.2em;
+
+  &__wrapper {
+    white-space: nowrap;
+
+    &:not(:last-of-type) {
+      margin-right: 15px;
+    }
+  }
+
+  &__badge {
+    font-size: 0.8em;
+  }
+
+  &__well {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
 }
-.film-info__wrapper {
-  white-space: nowrap;
-}
-.film-info__wrapper:not(:last-of-type) {
-  margin-right: 15px;
-}
-.film-info__badge {
-  font-size: 0.8em;
-}
-.film-info__well {
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-}
+
 .film-comment-form__button {
   float: right;
 }
@@ -30,4 +35,21 @@
 .main,
 .header {
   margin-bottom: 80px;
+}
+
+.embed-responsive {
+  border: 1px solid #d5d5d5;
+  border-bottom: none;
+  border-bottom-width: 1px;
+  border-bottom-color: #787878;
+  border-radius: 4px 4px 0 0;
+
+  &-16by9 {
+    padding-bottom: 56.25%;
+  }
+}
+
+.well {
+  border-color: #d5d5d5;
+  background-color: #f4f4f4;
 }
